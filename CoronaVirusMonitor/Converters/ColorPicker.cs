@@ -15,9 +15,9 @@ namespace CoronaVirusMonitor.Converters
         {
             if (value is int)
             {
-                if ((int) value >= 10000)
+                if ((int) value > 10000)
                     return new SolidColorBrush(criticalColor);
-                if ((int) value <= 9999)
+                if ((int) value < 9999)
                     return  new SolidColorBrush(normalColor);
             }
 
