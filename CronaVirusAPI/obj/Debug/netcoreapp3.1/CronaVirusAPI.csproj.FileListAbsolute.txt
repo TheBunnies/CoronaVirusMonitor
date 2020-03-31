@@ -1,0 +1,9 @@
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\bin\Debug\netcoreapp3.1\CronaVirusAPI.deps.json
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\bin\Debug\netcoreapp3.1\CronaVirusAPI.dll
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.csprojAssemblyReference.cache
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.AssemblyInfoInputs.cache
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.AssemblyInfo.cs
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\bin\Debug\netcoreapp3.1\CronaVirusAPI.pdb
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.csproj.CoreCompileInputs.cache
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.dll
+C:\Users\Алексей 2.0\source\repos\CronaVirusAPI\CronaVirusAPI\obj\Debug\netcoreapp3.1\CronaVirusAPI.pdb

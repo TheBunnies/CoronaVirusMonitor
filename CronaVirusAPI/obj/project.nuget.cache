@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bejtE+qZkGlsJR/NCsgsKiT2mNF5clAfz5QIyE4JrKabPvubYn4x5Anku1pI0W1YvAnFO1zqzT1YFI1jAkOP+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Алексей 2.0\\source\\repos\\CronaVirusAPI\\CronaVirusAPI\\CronaVirusAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Алексей 2.0\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,60 @@
+﻿<Window x:Class="CoronaVirusMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:CoronaVirusMonitor.ViewModels"
+        xmlns:converters="clr-namespace:CoronaVirusMonitor.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="570" Width="960"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <converters:ColorPicker x:Key="ColorPicker"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
+            <TextBox Padding="10" MinWidth="230" Text="{Binding Path=Filter, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Content="Refresh" Padding="12" MinWidth="60" Command="{Binding RefreshCommand}"></Button>
+        </StackPanel>
+
+        <TextBlock FontSize="50" Padding="2" Foreground="BlueViolet" Grid.Row="0">COVID-19</TextBlock>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <ListBox Grid.Column="1" ItemsSource="{Binding Countries}" SelectedItem="{Binding SelectedCountry}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock FontSize="20" Text="{Binding Path=Country}"></TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <StackPanel Margin="0, 10, 0, 0" Grid.Column="0" DataContext="{Binding SelectedCountry}">
+                <TextBlock Text="{Binding Path=Country, StringFormat=Country: {0}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=Slug, StringFormat=Slug: {0}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=NewConfirmed, StringFormat=New Confirmed: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=TotalConfirmed, StringFormat=Total Confirmed: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=NewDeaths, StringFormat=New Deaths: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=TotalDeaths, StringFormat=Total Deaths: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=NewRecovered, StringFormat=New Recovered: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=TotalRecovered, StringFormat=Total Recovered: {0}}" Foreground="{Binding Path=NewConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
