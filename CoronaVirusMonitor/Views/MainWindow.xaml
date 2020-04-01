@@ -6,7 +6,7 @@
         xmlns:vm="clr-namespace:CoronaVirusMonitor.ViewModels"
         xmlns:converters="clr-namespace:CoronaVirusMonitor.Converters"
         mc:Ignorable="d"
-        Title="MainWindow" Height="570" Width="960"
+        Title="CoronaVirus Monitor" Height="570" Width="960"
         WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <vm:MainViewModel />
