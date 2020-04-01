@@ -52,8 +52,8 @@
                 <TextBlock Text="{Binding Path=TotalConfirmed, StringFormat=Total Confirmed: {0}}" Foreground="{Binding Path=TotalConfirmed, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
                 <TextBlock Text="{Binding Path=NewDeaths, StringFormat=New Deaths: {0}}" Foreground="{Binding Path=NewDeaths, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
                 <TextBlock Text="{Binding Path=TotalDeaths, StringFormat=Total Deaths: {0}}" Foreground="{Binding Path=TotalDeaths, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
-                <TextBlock Text="{Binding Path=NewRecovered, StringFormat=New Recovered: {0}}" Foreground="{Binding Path=NewRecovered, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
-                <TextBlock Text="{Binding Path=TotalRecovered, StringFormat=Total Recovered: {0}}" Foreground="{Binding Path=TotalRecovered, Converter={StaticResource ColorPicker}}" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=NewRecovered, StringFormat=New Recovered: {0}}" Foreground="LimeGreen" Margin="5" FontSize="15"></TextBlock>
+                <TextBlock Text="{Binding Path=TotalRecovered, StringFormat=Total Recovered: {0}}" Foreground="LimeGreen" Margin="5" FontSize="15"></TextBlock>
             </StackPanel>
         </Grid>
     </Grid>
